@@ -1,0 +1,76 @@
+<!-- zoom.html: Live sessions -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Classes - My Study Hub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle Button -->
+    <button class="dark-mode-toggle" id="darkModeToggle" onclick="toggleDarkMode()">
+  <span id="darkModeIcon">🌙</span> Dark Mode
+</button>
+
+  <div class="wrapper">
+          <!-- Navbar Start -->
+         <nav class="navbar">
+                <div class="logo">🎓 My Study Hub</div>
+                <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="live.html" class="active">Consultancy</a></li>
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+          <!-- Navbar End -->
+        
+          <main class="content">
+        
+        <section class="page-header">
+                 <h1>Live Zoom Classes</h1>
+            </section>
+        
+            <section class="live-classes">
+        <div id="live-classes-container"></div> <!-- This will hold dynamic live classes -->
+              <div class="live-card">
+                <img src="images/math.jpg" alt="Math Notes">
+                <h3>Mathematics Consultancy</h3>
+                <p><strong>Teacher:</strong> Mr. A Sharma</p>
+                <p><strong>Available:</strong> Mon - Fri, 4 PM to 6 PM</p>
+                <a href="https://zoom.us/j/1234567890" target="_blank" class="btn">Join Live Class</a>
+                <button class="btn secondary">Book Private Session</button>
+              </div>
+        
+              <div class="live-card">
+                <img src="images/Physics.jpg" alt="Math Notes">
+                <h3>Physics Masterclass</h3>
+                <p><strong>Teacher:</strong> Ms. R Gupta</p>
+                <p><strong>Available:</strong> Tue - Thu, 5 PM to 7 PM</p>
+                <a href="https://zoom.us/j/0987654321" target="_blank" class="btn">Join Zoom</a>
+                <button class="btn secondary">Book Slot</button>
+              </div>
+        
+              <div class="live-card">
+                <h3>English Speaking Workshop</h3>
+                <p><strong>Teacher:</strong> Mr. S Verma</p>
+                <p><strong>Available:</strong> Sat - Sun, 11 AM to 1 PM</p>
+                <a href="https://zoom.us/j/1122334455" target="_blank" class="btn">Join Zoom</a>
+                <button class="btn secondary">Book Slot</button>
+              </div>
+        
+            </section>
+        
+          </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 My Study Hub. All rights reserved.</p>
+  </footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

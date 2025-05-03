@@ -1,0 +1,64 @@
+<!-- notes.html: Notes List -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes - My Study Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle Button -->
+    <button class="dark-mode-toggle" id="darkModeToggle" onclick="toggleDarkMode()">
+  <span id="darkModeIcon">🌙</span> Dark Mode
+</button>
+
+   <div class="wrapper">
+    <!-- page content -->
+    <nav class="navbar">
+        <div class="logo">🎓 My Study Hub</div>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="live.html">Consultancy</a></li>
+            <li><a href="notes.html" class="active">Notes</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <section class="page-header">
+        <h1>Study Notes and Materials</h1>
+        <p>Download premium notes prepared by top teachers. (Paid Access)</p>
+    </section>
+
+    <section class="card-container">
+        <div class="card">
+            <img src="images/math.jpg" alt="Math Notes">
+            <h3>Mathematics Notes</h3>
+            <p>Advanced notes covering algebra, calculus, geometry and more.</p>
+            <button>Download</button>
+        </div>
+        <div class="card">
+            <img src="images/biology.jpg" alt="Biology Notes">
+            <h3>Biology Notes</h3>
+            <p>Comprehensive diagrams, explanations, and study guides.</p>
+            <button>Download</button>
+        </div>
+        <div class="card">
+            <img src="images/history.jpg" alt="History Notes">
+            <h3>History Notes</h3>
+            <p>Detailed timelines and summaries of major world events.</p>
+            <button>Download</button>
+        </div>
+    </section>
+  </div>
+
+    <footer>
+        <p>© 2025 My Study Hub</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

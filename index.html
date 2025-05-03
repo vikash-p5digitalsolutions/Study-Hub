@@ -1,0 +1,83 @@
+<!-- index.html: Home page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Study Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle Button -->
+    <button class="dark-mode-toggle" id="darkModeToggle" onclick="toggleDarkMode()">
+        <span id="darkModeIcon">🌙</span> Dark Mode
+    </button>
+
+    <!-- Wrapper div for content -->
+    <div class="wrapper">
+        <!-- page content -->
+        <nav class="navbar">
+            <div class="logo"> 🎓 My Study Hub</div>
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div> <!-- Hamburger icon -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="live.html">Consultancy</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+
+        <!-- Sliding Cards Section -->
+        <section class="sliding-cards">
+            <div class="slide-card">Top Courses</div>
+            <div class="slide-card">Expert Teachers</div>
+            <div class="slide-card">Learn Anytime</div>
+            <div class="slide-card">New Features</div>
+        </section>
+
+        <!-- Sample Cards Section -->
+        <section class="card-container">
+            <div class="card">
+                <img src="images/Online.jpg" alt="Live Classes">
+                <h3>Live Classes</h3>
+                <p>Join our live consultancy sessions and get expert help!</p>
+                <button>Join Now</button>
+            </div>
+            <div class="card">
+                <img src="images/Recorded.jpg" alt="Pre-recorded Courses">
+                <h3>Pre-recorded Courses</h3>
+                <p>Access recorded lessons anytime to study at your own pace.</p>
+                <button>Watch Now</button>
+            </div>
+            <div class="card">
+                <img src="images/Consultancy.jpg" alt="Consultancy">
+                <h3>Consultancy</h3>
+                <p>Book 1-on-1 sessions with our expert teachers for guidance!</p>
+                <button>Book Now</button>
+            </div>
+            <div class="card">
+                <img src="images/notes.jpg" alt="Study Notes">
+                <h3>Study Notes</h3>
+                <p>Download helpful study materials and notes prepared by teachers.</p>
+                <button>Download Now</button>
+            </div>
+        </section>
+    </div> <!-- Close the wrapper div here -->
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 My Study Hub | 
+        <a href="index.html">Home</a> | 
+        <a href="courses.html">Courses</a> 
+         <a href="live.html">Consultancy</a> | 
+         <a href="notes.html">Notes</a></p>
+        <div class="social-icons">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

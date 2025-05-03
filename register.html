@@ -1,0 +1,110 @@
+<!-- register.html: Registration form for new Students or Teachers -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - My Study Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle Button -->
+    <button class="dark-mode-toggle" id="darkModeToggle" onclick="toggleDarkMode()">
+  <span id="darkModeIcon">🌙</span> Dark Mode
+</button>
+
+  <div class="wrapper">
+    <!-- page content -->
+    <nav class="navbar">
+        <div class="logo">🎓 My Study Hub</div>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="live.html">Consultancy</a></li>
+            <li><a href="notes.html">Notes</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <section class="register-form">
+        <h1>Create an Account</h1>
+      <form id="register-form">
+          <!-- Full Name Input -->
+          <input type="text" id="name" placeholder="Full Name" required>
+      
+          <!-- Subject Input (only for teachers) -->
+          <div id="subject-container" style="display: none;">
+            <select id="subject" required>
+              <option value="">Select Subject</option>
+              <!-- Subject options will be dynamically populated -->
+            </select>
+          </div>
+      
+          <!-- Email Input -->
+          <input type="email" id="email" placeholder="Email" required>
+      
+          <!-- Password Input -->
+          <input type="password" id="password" placeholder="Password" required>
+      
+          <!-- Phone Input -->
+          <input type="tel" id="phone" placeholder="Phone Number" required>
+      
+          <!-- Role Selection (Student or Teacher) -->
+          <select id="role" required onchange="toggleSubjectField()">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+          </select>
+      
+          <!-- Submit Button -->
+          <button type="submit">Register</button>
+          <p>Already have an account? <a href="login.html">Login</a></p>
+        </form> 
+    </section>
+  </div>
+  
+
+  <footer>
+        <p>© 2025 My Study Hub</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+          <script>
+        // Function to toggle visibility of the subject field based on role
+        function toggleSubjectField() {
+          const role = document.getElementById('role').value;
+          const subjectContainer = document.getElementById('subject-container');
+      
+          if (role === 'teacher') {
+            subjectContainer.style.display = 'block'; // Show subject field for teachers
+            populateSubjects(); // Populate the subject dropdown
+          } else {
+            subjectContainer.style.display = 'none'; // Hide subject field for students
+          }
+        }
+      
+        // Function to populate the subject dropdown menu
+        function populateSubjects() {
+          const subjects = [
+            "Mathematics",
+            "Physics",
+            "Chemistry",
+            "English",
+            "Computer Science",
+            "Biology"
+          ];
+          
+          const subjectSelect = document.getElementById('subject');
+          subjectSelect.innerHTML = '<option value="">Select Subject</option>'; // Clear existing options
+      
+          subjects.forEach(subject => {
+            const option = document.createElement('option');
+            option.value = subject;
+            option.textContent = subject;
+            subjectSelect.appendChild(option);
+          });
+        }
+      </script>
+
+</body>
+</html>
