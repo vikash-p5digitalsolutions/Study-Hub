@@ -1,0 +1,388 @@
+/* css/style.css: Main stylesheet for colors, layout, and responsiveness */
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: #121212;
+  color: #ffffff;
+}
+
+.dark-mode .register-form,
+.dark-mode .login-form {
+  background: #1e1e1e;
+  color: #ffffff;
+}
+
+.dark-mode input,
+.dark-mode select,
+.dark-mode button {
+  background: #333;
+  color: #fff;
+  border: none;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+  position: fixed;
+  top: 40px;
+  right: 30px;
+  background-color: #00bcd4;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 999;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #0097a7;
+}
+
+@media (max-width: 768px) {
+  .dark-mode-toggle {
+    top: 20px;
+    right: 10px;
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1b1b2f;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00bcd4;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #00bcd4;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #1b1b2f;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 160px;
+    padding: 10px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Sliding Cards */
+.sliding-cards {
+  display: flex;
+  overflow-x: auto;
+  padding: 20px;
+  gap: 15px;
+}
+
+.slide-card {
+  flex: 0 0 auto;
+  background-color: #0e1a2b;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 200px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Page Header */
+.page-header {
+  text-align: center;
+  padding: 50px 20px 20px;
+}
+
+/* Card Sections */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #112240;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.card button {
+  background-color: #00bcd4;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #029db1;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Login & Register Forms */
+.login-form,
+.register-form {
+  width: 100%;
+  max-width: 400px;
+  margin: 60px auto;
+  background: #112240;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.login-form h1,
+.register-form h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-form form,
+.register-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form input,
+.register-form input,
+.login-form select,
+.register-form select {
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+#subject-container select {
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+.login-form button,
+.register-form button {
+  background-color: #00bcd4;
+  border: none;
+  padding: 12px;
+  border-radius: 20px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.login-form button:hover,
+.register-form button:hover {
+  background-color: #019aa5;
+}
+
+.login-form p,
+.register-form p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.login-form a,
+.register-form a {
+  color: #00bcd4;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1b1b2f;
+  font-size: 0.9rem;
+  color: white;
+  margin-top: auto;
+}
+
+footer a {
+  color: #00bcd4;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+/* Miscellaneous Cards */
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons img {
+  margin: 0 5px;
+  vertical-align: middle;
+}
+
+.live-classes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.live-card {
+  background: #112240;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.live-card:hover {
+  transform: scale(1.05);
+}
+
+.teacher-card {
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.teacher-card:hover {
+  transform: translateY(-5px);
+}
+
+.teacher-card h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.teacher-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.teacher-card button {
+  margin: 15px 0;
+  padding: 10px 20px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.teacher-card button:hover {
+  background: #0056b3;
+}
+
+/* Utility */
+.btn {
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 10px 20px;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn.secondary {
+  background-color: #555;
+  }
