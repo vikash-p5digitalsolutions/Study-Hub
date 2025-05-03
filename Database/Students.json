@@ -1,0 +1,17 @@
+// Database/LiveClasses.json: Database of Students login
+[
+  {
+    "id": 1,
+    "name": "Aryan Sharma",
+    "email": "aryan@example.com",
+    "password": "password123",
+    "phone": "9876543210"
+  },
+  {
+    "id": 2,
+    "name": "Priya Verma",
+    "email": "priya@example.com",
+    "password": "mypassword",
+    "phone": "8765432109"
+  }
+]

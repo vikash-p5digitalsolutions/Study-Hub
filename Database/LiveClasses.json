@@ -1,0 +1,24 @@
+// Database/LiveClasses.json: Database for Students live sessions
+[
+  {
+    "id": 1,
+    "topic": "Maths Doubt Solving Session",
+    "schedule": "2025-05-01T16:00:00",
+    "teacher_id": 1,
+    "zoom_link": "https://zoom.us/j/1234567890"
+  },
+  {
+    "id": 2,
+    "topic": "Physics Live Workshop",
+    "schedule": "2025-05-02T17:30:00",
+    "teacher_id": 2,
+    "zoom_link": "https://zoom.us/j/0987654321"
+  },
+  {
+    "id": 3,
+    "topic": "English Conversation Practice",
+    "schedule": "2025-05-03T15:00:00",
+    "teacher_id": 3,
+    "zoom_link": "https://zoom.us/j/1122334455"
+  }
+]

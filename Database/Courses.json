@@ -1,0 +1,23 @@
+// Database/Courses.json: Database for Courses List
+[
+  {
+    "id": 1,
+    "title": "Mathematics Basics",
+    "description": "Learn the fundamental concepts of Mathematics with expert guidance."
+  },
+  {
+    "id": 2,
+    "title": "Advanced Physics",
+    "description": "Explore the fascinating world of physics and its applications."
+  },
+  {
+    "id": 3,
+    "title": "Spoken English Mastery",
+    "description": "Improve your English communication and speaking skills effectively."
+  },
+  {
+    "id": 4,
+    "title": "Computer Science Essentials",
+    "description": "Learn programming basics and computer operations from scratch."
+  }
+]

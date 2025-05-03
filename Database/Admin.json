@@ -1,0 +1,9 @@
+// Database/Admin.json: Admin data
+[
+  {
+    "id": 1,
+    "name": "Super Admin",
+    "email": "admin@studyhub.com",
+    "password": "admin123"
+  }
+]

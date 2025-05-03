@@ -1,0 +1,24 @@
+// Database/LiveClasses.json: Database of Teachers
+[
+  {
+    "id": 1,
+    "name": "Prof. Rakesh Singh",
+    "subject": "Mathematics",
+    "email": "rakesh@studyhub.com",
+    "zoom_link": "https://zoom.us/j/teacher1"
+  },
+  {
+    "id": 2,
+    "name": "Dr. Sneha Patel",
+    "subject": "Physics",
+    "email": "sneha@studyhub.com",
+    "zoom_link": "https://zoom.us/j/teacher2"
+  },
+  {
+    "id": 3,
+    "name": "Mr. John Peter",
+    "subject": "Spoken English",
+    "email": "john@studyhub.com",
+    "zoom_link": "https://zoom.us/j/teacher3"
+  }
+]

@@ -1,0 +1,27 @@
+// Database/Notes.json: Database for Students Notes
+[
+  {
+    "id": 1,
+    "title": "Maths Formulas Book",
+    "file_url": "notes/maths-formulas.pdf",
+    "price": 49.00
+  },
+  {
+    "id": 2,
+    "title": "Physics Concepts Notes",
+    "file_url": "notes/physics-concepts.pdf",
+    "price": 79.00
+  },
+  {
+    "id": 3,
+    "title": "Spoken English Tips",
+    "file_url": "notes/english-speaking.pdf",
+    "price": 59.00
+  },
+  {
+    "id": 4,
+    "title": "Introduction to Programming",
+    "file_url": "notes/intro-programming.pdf",
+    "price": 99.00
+  }
+]
